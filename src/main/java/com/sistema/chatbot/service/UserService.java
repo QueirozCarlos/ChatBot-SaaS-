@@ -1,6 +1,5 @@
 package com.sistema.chatbot.service;
 
-import com.sistema.chatbot.model.User;
 import com.sistema.chatbot.model.UserEntity;
 import com.sistema.chatbot.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +16,7 @@ public class UserService {
         return userRepository.findById(id);
     }
 
-    public User saveUser(User user) {
+    public UserEntity saveUser(UserEntity user) {
         return userRepository.save(user);
     }
 }

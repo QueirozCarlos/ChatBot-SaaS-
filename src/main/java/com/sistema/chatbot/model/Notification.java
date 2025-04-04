@@ -11,7 +11,7 @@ public class Notification {
     private String message;
 
     @ManyToOne
-    private User recipient;
+    private UserEntity recipient;
 
     public int getId() {
         return id;
@@ -29,11 +29,11 @@ public class Notification {
         this.message = message;
     }
 
-    public User getRecipient() {
+    public UserEntity getRecipient() {
         return recipient;
     }
 
-    public void setRecipient(User recipient) {
+    public void setRecipient(UserEntity recipient) {
         this.recipient = recipient;
     }
 }

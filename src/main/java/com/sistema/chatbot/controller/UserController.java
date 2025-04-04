@@ -1,6 +1,5 @@
 package com.sistema.chatbot.controller;
 
-import com.sistema.chatbot.model.User;
 import com.sistema.chatbot.model.UserEntity;
 import com.sistema.chatbot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +20,7 @@ public class UserController {
     }
 
     @PostMapping
-    public User createUser(@RequestBody User user) {
+    public UserEntity createUser(@RequestBody UserEntity user) {
         return userService.saveUser(user);
     }
 }

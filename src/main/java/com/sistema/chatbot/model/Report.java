@@ -12,8 +12,8 @@ public class Report {
     private int id;
 
     private String reportType;
-    @ElementCollection
-    private Map<String, Object> filters;
+//    @ElementCollection
+//    private Map<String, Object> filters;
     private Date generatedAt;
 
     public int getId() {
@@ -32,13 +32,13 @@ public class Report {
         this.reportType = reportType;
     }
 
-    public Map<String, Object> getFilters() {
-        return filters;
-    }
+//    public Map<String, Object> getFilters() {
+//        return filters;
+//    }
 
-    public void setFilters(Map<String, Object> filters) {
-        this.filters = filters;
-    }
+//    public void setFilters(Map<String, Object> filters) {
+//        this.filters = filters;
+//    }
 
     public Date getGeneratedAt() {
         return generatedAt;
