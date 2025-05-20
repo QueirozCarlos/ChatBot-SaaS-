@@ -1,6 +1,11 @@
 package com.sistema.chatbot.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.Column;
 
 @Entity
 @Table(name = "products")
@@ -8,16 +13,28 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "description")
     private String description;
+
+    @Column(name = "price")
     private double price;
+
+    @Column(name = "stock_quantity")
     private int stockQuantity;
 
-    public Product(String name, String description, double price, int stockQuantity) {
+    @Column(name = "categoria")
+    private String categoria;
+
+    public Product(String name, String description, double price, int stockQuantity, String categoria) {
         this.name = name;
         this.description = description;
         this.price = price;
         this.stockQuantity = stockQuantity;
+        this.categoria = categoria;
     }
 
     public Product() {
@@ -63,6 +80,14 @@ public class Product {
         this.stockQuantity = stockQuantity;
     }
 
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
     @Override
     public String toString() {
         return "Product{" +
@@ -71,6 +96,7 @@ public class Product {
                 ", description='" + description + '\'' +
                 ", price=" + price +
                 ", stockQuantity=" + stockQuantity +
+                ", categoria='" + categoria + '\'' +
                 '}';
     }
 }

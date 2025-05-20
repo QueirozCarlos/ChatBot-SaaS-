@@ -10,31 +10,60 @@ import org.springframework.stereotype.Service;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
+import java.util.UUID;
 
 @Service
 public class TokenService {
 
-    @Value("${api.security.token.secret}") //variavel de ambiente
+    @Value("${api.security.token.secret}")
     private String secret;
 
-    public String generateToken(UserEntity user) {
-        try{
-            Algorithm algorithm = Algorithm.HMAC256("secret");
-            String token = JWT.create()
+    @Value("${api.security.token.refresh-secret}")
+    private String refreshSecret;
+
+    public String generateAccessToken(UserEntity user) {
+        try {
+            Algorithm algorithm = Algorithm.HMAC256(secret);
+            return JWT.create()
                     .withIssuer("auth-api")
-                    .withSubject(user.getLogin())
-                    .withExpiresAt(genExpirationDate())
+                    .withSubject(user.getEmail())
+                    .withExpiresAt(genAccessTokenExpirationDate())
                     .sign(algorithm);
-            return token;
         } catch (JWTCreationException exception) {
-                throw new RuntimeException("Erro ao gerar token", exception);
+            throw new RuntimeException("Erro ao gerar token de acesso", exception);
         }
     }
 
-
-    public String validateToken(String token) {
+    public String generateRefreshToken(UserEntity user) {
         try {
-            Algorithm algorithm = Algorithm.HMAC256("secret");
+            Algorithm algorithm = Algorithm.HMAC256(refreshSecret);
+            return JWT.create()
+                    .withIssuer("auth-api")
+                    .withSubject(user.getEmail())
+                    .withClaim("tokenId", UUID.randomUUID().toString())
+                    .withExpiresAt(genRefreshTokenExpirationDate())
+                    .sign(algorithm);
+        } catch (JWTCreationException exception) {
+            throw new RuntimeException("Erro ao gerar refresh token", exception);
+        }
+    }
+
+    public String validateAccessToken(String token) {
+        try {
+            Algorithm algorithm = Algorithm.HMAC256(secret);
+            return JWT.require(algorithm)
+                    .withIssuer("auth-api")
+                    .build()
+                    .verify(token)
+                    .getSubject();
+        } catch (JWTVerificationException exception) {
+            throw new RuntimeException("Token inválido ou expirado");
+        }
+    }
+
+    public String validateRefreshToken(String token) {
+        try {
+            Algorithm algorithm = Algorithm.HMAC256(refreshSecret);
             return JWT.require(algorithm)
                     .withIssuer("auth-api")
                     .build()
@@ -45,7 +74,11 @@ public class TokenService {
         }
     }
 
-    private Instant genExpirationDate(){
+    private Instant genAccessTokenExpirationDate() {
         return LocalDateTime.now().plusHours(2).toInstant(ZoneOffset.of("-03:00"));
+    }
+
+    private Instant genRefreshTokenExpirationDate() {
+        return LocalDateTime.now().plusDays(7).toInstant(ZoneOffset.of("-03:00"));
     }
 }

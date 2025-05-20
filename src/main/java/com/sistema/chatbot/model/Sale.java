@@ -19,6 +19,7 @@ public class Sale {
     private Date saleDate;
     private String customerName;
     private String sellerName;
+    private String productName;
 
     public int getId() {
         return id;
@@ -74,5 +75,13 @@ public class Sale {
 
     public void setSellerName(String sellerName) {
         this.sellerName = sellerName;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 }

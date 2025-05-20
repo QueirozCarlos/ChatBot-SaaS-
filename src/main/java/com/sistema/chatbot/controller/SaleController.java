@@ -28,4 +28,9 @@ public class SaleController {
     public Sale createSale(@RequestBody Sale sale) {
         return saleService.saveSale(sale);
     }
+
+    @DeleteMapping("/{id}")
+    public void deleteSale(@PathVariable int id) {
+        saleService.deleteSale(id);
+    }
 }

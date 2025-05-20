@@ -1,5 +1,6 @@
 package com.sistema.chatbot.controller;
 
+import com.sistema.chatbot.dto.ProductDTO;
 import com.sistema.chatbot.model.Product;
 import com.sistema.chatbot.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;

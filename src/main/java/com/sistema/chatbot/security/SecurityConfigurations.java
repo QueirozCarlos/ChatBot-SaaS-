@@ -1,6 +1,5 @@
 package com.sistema.chatbot.security;
 
-
 import jakarta.servlet.Filter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -25,42 +24,35 @@ public class SecurityConfigurations {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
-        Filter SecurityFilter;
         return httpSecurity
                 .csrf(csrf -> csrf.disable())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorize -> authorize
-
-                                //Acesso público
-                                .requestMatchers(HttpMethod.POST, "/api/auth/login").permitAll()
-                                .requestMatchers(HttpMethod.POST, "/api/auth/register").permitAll()
-
-                                // Acesso ADMIN total a essas rotas
-                                .requestMatchers("/api/products").hasRole("ADMIN")
-                                .requestMatchers("/api/sales").hasRole("ADMIN")
-                                .requestMatchers("/api/reports").hasRole("ADMIN")
-                                .requestMatchers("/api/users").hasRole("ADMIN")
-
-                                // Notificações - ADMIN pode criar/editar, USER pode ler
-                                .requestMatchers(HttpMethod.POST, "/api/notifications").hasRole("ADMIN")
-                                .requestMatchers(HttpMethod.PUT, "/api/notifications").hasRole("ADMIN")
-                                .requestMatchers(HttpMethod.GET, "/api/notifications").hasAnyRole("ADMIN", "USER")
-
-                                // Sales e produtos - ADMIN pode criar/editarrr
-                                .requestMatchers(HttpMethod.POST, "/api/products").hasRole("USER")
-                                .requestMatchers(HttpMethod.PUT, "/api/sales").hasRole("USER")
-                                // Qualquer outra rota exige autenticação
-
-                                // Libera o acesso ao console do H2
-                                .requestMatchers("/h2-console/login.do").permitAll()
-
-                                .anyRequest().authenticated()
-
-
-//                        .requestMatchers(HttpMethod.POST, "/api/auth/login").permitAll() //qualquer pessoa faz requisição ao endpoint
-//                        .requestMatchers(HttpMethod.POST, "/api/auth/register").permitAll() //qualquer pessoa faz requisição ao endpoint
-//                        .requestMatchers(HttpMethod.POST, "/api/products").hasRole("ADMIN")
-//                        .anyRequest().authenticated()
+                        // Acesso público
+                        .requestMatchers(HttpMethod.POST, "/api/auth/**").permitAll()
+                        .requestMatchers("/swagger-ui.html", "/swagger-ui/**", "/v3/api-docs/**").permitAll()
+                        
+                        // Configurações específicas para /api/sales
+                        .requestMatchers(HttpMethod.GET, "/api/sales").hasAnyRole("ADMIN", "USER")
+                        .requestMatchers(HttpMethod.GET, "/api/sales/**").hasAnyRole("ADMIN", "USER")
+                        .requestMatchers(HttpMethod.POST, "/api/sales").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.DELETE, "/api/sales/**").hasRole("ADMIN")
+                        
+                        // Configurações para outros endpoints
+                        .requestMatchers("/api/products").permitAll()
+                        .requestMatchers("/api/reports").hasRole("ADMIN")
+                        .requestMatchers("/api/users").hasRole("ADMIN")
+                        
+                        // Notificações
+                        .requestMatchers(HttpMethod.PUT, "/api/notifications").hasRole("ADMIN")
+                        
+                        // Produtos
+                        .requestMatchers(HttpMethod.POST, "/api/products").hasRole("USER")
+                        .requestMatchers(HttpMethod.PUT, "/api/products").hasRole("USER")
+                        .requestMatchers(HttpMethod.GET, "/api/products").hasAnyRole("ADMIN", "USER")
+                        
+                        // Todas as outras requisições precisam de autenticação
+                        .anyRequest().authenticated()
                 )
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
@@ -71,7 +63,6 @@ public class SecurityConfigurations {
         return authenticationConfiguration.getAuthenticationManager();
     }
 
-    //codificar(hash) senha de forma segura
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();

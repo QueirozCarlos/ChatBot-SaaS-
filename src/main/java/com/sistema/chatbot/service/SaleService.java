@@ -24,4 +24,8 @@ public class SaleService {
     public Sale saveSale(Sale sale) {
         return saleRepository.save(sale);
     }
+
+    public void deleteSale(int id) {
+        saleRepository.deleteById(id);
+    }
 }

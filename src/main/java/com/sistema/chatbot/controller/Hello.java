@@ -30,7 +30,7 @@ public class Hello {
 
         //TODO : CADASTRAR PRODUTOS VIA API PARA BUSCAR DO BANCO DE FORMA DINAMICA
 
-        var s = formatarDadosParaIA(productRepository.findAll());
+        var s = formatarDadosParaIA((List<Product>) productRepository.findAll());
 
         return chatClient
                 .prompt()
