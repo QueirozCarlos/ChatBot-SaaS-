@@ -1,17 +1,33 @@
-# Use a imagem oficial do OpenJDK 21 para rodar sua aplicação
-FROM eclipse-temurin:21-jdk-jammy
-
-# Diretório de trabalho dentro do container
+# Build stage
+FROM maven:3.9-eclipse-temurin-21 AS build
 WORKDIR /app
 
-# Copia o JAR gerado para dentro do container
-COPY target/chatbot-vendas-0.0.1-SNAPSHOT.jar app.jar
+# Copy pom.xml and download dependencies
+COPY pom.xml .
+RUN mvn dependency:go-offline
 
-# Expõe a porta padrão do Spring Boot (8080)
+# Copy source code
+COPY src ./src
+
+# Build the application
+RUN mvn clean package -DskipTests
+
+# Run stage
+FROM eclipse-temurin:21-jre-jammy
+WORKDIR /app
+
+# Copy the built artifact from build stage
+COPY --from=build /app/target/*.jar app.jar
+
+# Create a non-root user
+RUN useradd -m -u 1001 appuser
+USER appuser
+
+# Expose the application port
 EXPOSE 8080
 
-# Variáveis de ambiente (exemplo, você pode adicionar as que precisar)
-ENV JAVA_OPTS=""
+# Set environment variables
+ENV JAVA_OPTS="-Xms512m -Xmx1024m"
 
-# Comando para rodar a aplicação
-ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]
+# Run the application
+ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"] 

@@ -1,41 +1,38 @@
-2025-06-08T00:02:23.410-03:00  INFO 22211 --- [chatbot-vendas] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T00:02:23.672-03:00  INFO 22211 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-06-08T00:02:23.839-03:00  INFO 22211 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-06-08T00:02:29.655-03:00  INFO 25748 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Starting ChatbotVendasApplication using Java 23.0.2 with PID 25748 (/home/suporte/Documentos/ChatBot-SaaS-/target/classes started by suporte in /home/suporte/Documentos/ChatBot-SaaS-)
-2025-06-08T00:02:29.657-03:00 DEBUG 25748 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Running with Spring Boot v3.2.3, Spring v6.1.4
-2025-06-08T00:02:29.659-03:00  INFO 25748 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-06-08T00:02:31.531-03:00  INFO 25748 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-08T00:02:31.647-03:00  INFO 25748 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 5 JPA repository interfaces.
-2025-06-08T00:02:32.607-03:00  INFO 25748 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-08T00:02:32.621-03:00  INFO 25748 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-08T00:02:32.621-03:00  INFO 25748 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-06-08T00:02:32.670-03:00  INFO 25748 --- [chatbot-vendas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-08T00:02:32.671-03:00  INFO 25748 --- [chatbot-vendas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2597 ms
-2025-06-08T00:02:33.001-03:00  INFO 25748 --- [chatbot-vendas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-08T00:02:33.072-03:00  INFO 25748 --- [chatbot-vendas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-06-08T00:02:33.115-03:00  INFO 25748 --- [chatbot-vendas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-08T00:02:33.394-03:00  INFO 25748 --- [chatbot-vendas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-08T00:02:33.425-03:00  INFO 25748 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-08T00:02:33.614-03:00  INFO 25748 --- [chatbot-vendas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11577ab8
-2025-06-08T00:02:33.616-03:00  INFO 25748 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-08T00:02:33.663-03:00  WARN 25748 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-06-08T00:02:33.664-03:00  WARN 25748 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-06-08T00:02:34.683-03:00  INFO 25748 --- [chatbot-vendas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-08T00:02:34.829-03:00  INFO 25748 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T00:02:35.273-03:00 DEBUG 25748 --- [chatbot-vendas] [main] c.s.chatbot.security.SecurityFilter      : Filter 'securityFilter' configured for use
-2025-06-08T00:02:36.258-03:00  WARN 25748 --- [chatbot-vendas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-08T00:02:37.070-03:00  INFO 25748 --- [chatbot-vendas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-06-08T00:02:37.365-03:00  INFO 25748 --- [chatbot-vendas] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46f5030f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18b77ec9, org.springframework.security.web.context.SecurityContextHolderFilter@39d5376c, org.springframework.security.web.header.HeaderWriterFilter@6cd8aee2, org.springframework.web.filter.CorsFilter@5e3a577a, org.springframework.security.web.authentication.logout.LogoutFilter@39d0775c, com.sistema.chatbot.security.SecurityFilter@27879518, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f59ecf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@573f95b2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36821a1b, org.springframework.security.web.session.SessionManagementFilter@75044df3, org.springframework.security.web.access.ExceptionTranslationFilter@64078e6a, org.springframework.security.web.access.intercept.AuthorizationFilter@75564689]
-2025-06-08T00:02:38.835-03:00  INFO 25748 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-06-08T00:02:38.860-03:00  INFO 25748 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Started ChatbotVendasApplication in 9.873 seconds (process running for 11.202)
-2025-06-08T00:02:39.378-03:00  INFO 25748 --- [chatbot-vendas] [RMI TCP Connection(2)-192.168.0.25] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-08T00:02:39.381-03:00  INFO 25748 --- [chatbot-vendas] [RMI TCP Connection(2)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-08T00:02:39.388-03:00  INFO 25748 --- [chatbot-vendas] [RMI TCP Connection(2)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2025-06-08T00:08:13.377-03:00 ERROR 25748 --- [chatbot-vendas] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+2025-06-10T11:11:11.608-03:00  INFO 7485 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Starting ChatbotVendasApplication using Java 23.0.2 with PID 7485 (/home/suporte/Documentos/ChatBot-SaaS-/target/classes started by suporte in /home/suporte/Documentos/ChatBot-SaaS-)
+2025-06-10T11:11:11.638-03:00 DEBUG 7485 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-10T11:11:11.639-03:00  INFO 7485 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-06-10T11:11:13.584-03:00  INFO 7485 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-10T11:11:13.695-03:00  INFO 7485 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104 ms. Found 5 JPA repository interfaces.
+2025-06-10T11:11:14.530-03:00  INFO 7485 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-10T11:11:14.540-03:00  INFO 7485 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-10T11:11:14.540-03:00  INFO 7485 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-10T11:11:14.583-03:00  INFO 7485 --- [chatbot-vendas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-10T11:11:14.583-03:00  INFO 7485 --- [chatbot-vendas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2411 ms
+2025-06-10T11:11:14.884-03:00  INFO 7485 --- [chatbot-vendas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-10T11:11:14.939-03:00  INFO 7485 --- [chatbot-vendas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-10T11:11:14.965-03:00  INFO 7485 --- [chatbot-vendas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-10T11:11:15.179-03:00  INFO 7485 --- [chatbot-vendas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-10T11:11:15.201-03:00  INFO 7485 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-10T11:11:15.402-03:00  INFO 7485 --- [chatbot-vendas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@665f88e1
+2025-06-10T11:11:15.404-03:00  INFO 7485 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-10T11:11:15.462-03:00  WARN 7485 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-10T11:11:15.464-03:00  WARN 7485 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-10T11:11:16.305-03:00  INFO 7485 --- [chatbot-vendas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-10T11:11:16.376-03:00  INFO 7485 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T11:11:16.710-03:00 DEBUG 7485 --- [chatbot-vendas] [main] c.s.chatbot.security.SecurityFilter      : Filter 'securityFilter' configured for use
+2025-06-10T11:11:17.367-03:00  WARN 7485 --- [chatbot-vendas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-10T11:11:17.702-03:00  INFO 7485 --- [chatbot-vendas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-06-10T11:11:17.760-03:00  INFO 7485 --- [chatbot-vendas] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@64b6d6dd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1181a376, org.springframework.security.web.context.SecurityContextHolderFilter@2df019b8, org.springframework.security.web.header.HeaderWriterFilter@29c471f6, org.springframework.web.filter.CorsFilter@c52c362, org.springframework.security.web.authentication.logout.LogoutFilter@12b9d405, com.sistema.chatbot.security.SecurityFilter@64cbc28e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c04dae9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65977161, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ef09e1, org.springframework.security.web.session.SessionManagementFilter@19abe8f7, org.springframework.security.web.access.ExceptionTranslationFilter@34ceefb5, org.springframework.security.web.access.intercept.AuthorizationFilter@21e72fb2]
+2025-06-10T11:11:18.336-03:00  INFO 7485 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-06-10T11:11:18.349-03:00  INFO 7485 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Started ChatbotVendasApplication in 7.704 seconds (process running for 9.28)
+2025-06-10T11:11:18.945-03:00  INFO 7485 --- [chatbot-vendas] [RMI TCP Connection(2)-192.168.100.158] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-10T11:11:18.945-03:00  INFO 7485 --- [chatbot-vendas] [RMI TCP Connection(2)-192.168.100.158] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-10T11:11:18.957-03:00  INFO 7485 --- [chatbot-vendas] [RMI TCP Connection(2)-192.168.100.158] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2025-06-10T13:02:54.691-03:00 ERROR 7485 --- [chatbot-vendas] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
 
 java.lang.RuntimeException: Token inválido ou expirado
 	at com.sistema.chatbot.security.TokenService.validateAccessToken(TokenService.java:60) ~[classes/:na]
-	at com.sistema.chatbot.security.SecurityFilter.doFilterInternal(SecurityFilter.java:31) ~[classes/:na]
+	at com.sistema.chatbot.security.SecurityFilter.doFilterInternal(SecurityFilter.java:50) ~[classes/:na]
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.2.jar:6.2.2]
 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.2.jar:6.2.2]
@@ -116,486 +113,11 @@ java.lang.RuntimeException: Token inválido ou expirado
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
 	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
 
-2025-06-08T01:08:27.365-03:00  INFO 47920 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Starting ChatbotVendasApplication using Java 23.0.2 with PID 47920 (/home/suporte/Documentos/ChatBot-SaaS-/target/classes started by suporte in /home/suporte/Documentos/ChatBot-SaaS-)
-2025-06-08T01:08:27.367-03:00 DEBUG 47920 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Running with Spring Boot v3.2.3, Spring v6.1.4
-2025-06-08T01:08:27.368-03:00  INFO 47920 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-06-08T01:08:29.243-03:00  INFO 47920 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-08T01:08:29.423-03:00  INFO 47920 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 169 ms. Found 5 JPA repository interfaces.
-2025-06-08T01:08:30.618-03:00  INFO 47920 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-08T01:08:30.638-03:00  INFO 47920 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-08T01:08:30.639-03:00  INFO 47920 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-06-08T01:08:30.774-03:00  INFO 47920 --- [chatbot-vendas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-08T01:08:30.776-03:00  INFO 47920 --- [chatbot-vendas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2863 ms
-2025-06-08T01:08:31.721-03:00  INFO 47920 --- [chatbot-vendas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-08T01:08:31.812-03:00  INFO 47920 --- [chatbot-vendas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-06-08T01:08:31.840-03:00  INFO 47920 --- [chatbot-vendas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-08T01:08:32.078-03:00  INFO 47920 --- [chatbot-vendas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-08T01:08:32.105-03:00  INFO 47920 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-08T01:08:32.261-03:00  INFO 47920 --- [chatbot-vendas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b71af0d
-2025-06-08T01:08:32.263-03:00  INFO 47920 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-08T01:08:32.332-03:00  WARN 47920 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-06-08T01:08:32.333-03:00  WARN 47920 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-06-08T01:08:33.389-03:00  INFO 47920 --- [chatbot-vendas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-08T01:08:33.525-03:00  INFO 47920 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T01:08:33.924-03:00 DEBUG 47920 --- [chatbot-vendas] [main] c.s.chatbot.security.SecurityFilter      : Filter 'securityFilter' configured for use
-2025-06-08T01:08:34.850-03:00  WARN 47920 --- [chatbot-vendas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-08T01:08:35.911-03:00  INFO 47920 --- [chatbot-vendas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-06-08T01:08:36.194-03:00  INFO 47920 --- [chatbot-vendas] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@66c58c03, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29e40db1, org.springframework.security.web.context.SecurityContextHolderFilter@358b70c4, org.springframework.security.web.header.HeaderWriterFilter@2c66be14, org.springframework.web.filter.CorsFilter@29f3ea39, org.springframework.security.web.authentication.logout.LogoutFilter@66ab765c, com.sistema.chatbot.security.SecurityFilter@1b3a1e42, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a17ab87, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d7bfb13, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47e6004c, org.springframework.security.web.session.SessionManagementFilter@134b9d9c, org.springframework.security.web.access.ExceptionTranslationFilter@7335aae5, org.springframework.security.web.access.intercept.AuthorizationFilter@6c758c74]
-2025-06-08T01:08:38.113-03:00  WARN 47920 --- [chatbot-vendas] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2025-06-08T01:08:38.123-03:00  INFO 47920 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T01:08:38.127-03:00  INFO 47920 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-06-08T01:08:38.147-03:00  INFO 47920 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-06-08T01:08:38.198-03:00  INFO 47920 --- [chatbot-vendas] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-06-08T01:08:38.291-03:00 ERROR 47920 --- [chatbot-vendas] [main] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:291) ~[spring-context-6.1.4.jar:6.1.4]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:471) ~[spring-context-6.1.4.jar:6.1.4]
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:260) ~[spring-context-6.1.4.jar:6.1.4]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:205) ~[spring-context-6.1.4.jar:6.1.4]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:978) ~[spring-context-6.1.4.jar:6.1.4]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.1.4.jar:6.1.4]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.3.jar:3.2.3]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.3.jar:3.2.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.3.jar:3.2.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.3.jar:3.2.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.3.jar:3.2.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.3.jar:3.2.3]
-	at com.sistema.chatbot.ChatbotVendasApplication.main(ChatbotVendasApplication.java:10) ~[classes/:na]
-Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat server
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:249) ~[spring-boot-3.2.3.jar:3.2.3]
-	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44) ~[spring-boot-3.2.3.jar:3.2.3]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:288) ~[spring-context-6.1.4.jar:6.1.4]
-	... 13 common frames omitted
-Caused by: java.lang.IllegalArgumentException: standardService.connector.startFailed
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:235) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:306) ~[spring-boot-3.2.3.jar:3.2.3]
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:234) ~[spring-boot-3.2.3.jar:3.2.3]
-	... 15 common frames omitted
-Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1046) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:232) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	... 17 common frames omitted
-Caused by: java.net.BindException: Endereço já em uso
-	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[na:na]
-	at java.base/sun.nio.ch.Net.bind(Net.java:565) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301) ~[na:na]
-	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:247) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:202) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1282) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1368) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1043) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	... 19 common frames omitted
-
-2025-06-08T01:09:41.964-03:00  INFO 48360 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Starting ChatbotVendasApplication using Java 23.0.2 with PID 48360 (/home/suporte/Documentos/ChatBot-SaaS-/target/classes started by suporte in /home/suporte/Documentos/ChatBot-SaaS-)
-2025-06-08T01:09:41.966-03:00 DEBUG 48360 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Running with Spring Boot v3.2.3, Spring v6.1.4
-2025-06-08T01:09:41.967-03:00  INFO 48360 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-06-08T01:09:43.839-03:00  INFO 48360 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-08T01:09:44.000-03:00  INFO 48360 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 151 ms. Found 5 JPA repository interfaces.
-2025-06-08T01:09:44.862-03:00  INFO 48360 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-08T01:09:44.873-03:00  INFO 48360 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-08T01:09:44.873-03:00  INFO 48360 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-06-08T01:09:44.931-03:00  INFO 48360 --- [chatbot-vendas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-08T01:09:44.931-03:00  INFO 48360 --- [chatbot-vendas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2491 ms
-2025-06-08T01:09:45.307-03:00  INFO 48360 --- [chatbot-vendas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-08T01:09:45.458-03:00  INFO 48360 --- [chatbot-vendas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-06-08T01:09:45.555-03:00  INFO 48360 --- [chatbot-vendas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-08T01:09:45.845-03:00  INFO 48360 --- [chatbot-vendas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-08T01:09:45.867-03:00  INFO 48360 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-08T01:09:46.035-03:00  INFO 48360 --- [chatbot-vendas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@220f6a3c
-2025-06-08T01:09:46.041-03:00  INFO 48360 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-08T01:09:46.098-03:00  WARN 48360 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-06-08T01:09:46.100-03:00  WARN 48360 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-06-08T01:09:47.185-03:00  INFO 48360 --- [chatbot-vendas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-08T01:09:47.260-03:00  INFO 48360 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T01:09:47.609-03:00 DEBUG 48360 --- [chatbot-vendas] [main] c.s.chatbot.security.SecurityFilter      : Filter 'securityFilter' configured for use
-2025-06-08T01:09:48.225-03:00  WARN 48360 --- [chatbot-vendas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-08T01:09:48.607-03:00  INFO 48360 --- [chatbot-vendas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-06-08T01:09:48.664-03:00  INFO 48360 --- [chatbot-vendas] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@65977161, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f7e2ca8, org.springframework.security.web.context.SecurityContextHolderFilter@2c66be14, org.springframework.security.web.header.HeaderWriterFilter@380f9c1d, org.springframework.web.filter.CorsFilter@2cbc0224, org.springframework.security.web.authentication.logout.LogoutFilter@424769f2, com.sistema.chatbot.security.SecurityFilter@402fcf14, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20dab85c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f59ecf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d07fb2, org.springframework.security.web.session.SessionManagementFilter@290964bd, org.springframework.security.web.access.ExceptionTranslationFilter@6803b02d, org.springframework.security.web.access.intercept.AuthorizationFilter@319428ba]
-2025-06-08T01:09:49.300-03:00  WARN 48360 --- [chatbot-vendas] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2025-06-08T01:09:49.306-03:00  INFO 48360 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T01:09:49.308-03:00  INFO 48360 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-06-08T01:09:49.313-03:00  INFO 48360 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-06-08T01:09:49.329-03:00  INFO 48360 --- [chatbot-vendas] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-06-08T01:09:49.343-03:00 ERROR 48360 --- [chatbot-vendas] [main] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:291) ~[spring-context-6.1.4.jar:6.1.4]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:471) ~[spring-context-6.1.4.jar:6.1.4]
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:260) ~[spring-context-6.1.4.jar:6.1.4]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:205) ~[spring-context-6.1.4.jar:6.1.4]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:978) ~[spring-context-6.1.4.jar:6.1.4]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.1.4.jar:6.1.4]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.3.jar:3.2.3]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.3.jar:3.2.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.3.jar:3.2.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.3.jar:3.2.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.3.jar:3.2.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.3.jar:3.2.3]
-	at com.sistema.chatbot.ChatbotVendasApplication.main(ChatbotVendasApplication.java:10) ~[classes/:na]
-Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat server
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:249) ~[spring-boot-3.2.3.jar:3.2.3]
-	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44) ~[spring-boot-3.2.3.jar:3.2.3]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:288) ~[spring-context-6.1.4.jar:6.1.4]
-	... 13 common frames omitted
-Caused by: java.lang.IllegalArgumentException: standardService.connector.startFailed
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:235) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:306) ~[spring-boot-3.2.3.jar:3.2.3]
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:234) ~[spring-boot-3.2.3.jar:3.2.3]
-	... 15 common frames omitted
-Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1046) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:232) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	... 17 common frames omitted
-Caused by: java.net.BindException: Endereço já em uso
-	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[na:na]
-	at java.base/sun.nio.ch.Net.bind(Net.java:565) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301) ~[na:na]
-	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:247) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:202) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1282) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1368) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1043) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	... 19 common frames omitted
-
-2025-06-08T01:17:11.171-03:00  INFO 50682 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Starting ChatbotVendasApplication using Java 23.0.2 with PID 50682 (/home/suporte/Documentos/ChatBot-SaaS-/target/classes started by suporte in /home/suporte/Documentos/ChatBot-SaaS-)
-2025-06-08T01:17:11.172-03:00 DEBUG 50682 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Running with Spring Boot v3.2.3, Spring v6.1.4
-2025-06-08T01:17:11.173-03:00  INFO 50682 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-06-08T01:17:12.537-03:00  INFO 50682 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-08T01:17:12.673-03:00  INFO 50682 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 128 ms. Found 5 JPA repository interfaces.
-2025-06-08T01:17:13.672-03:00  INFO 50682 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-08T01:17:13.685-03:00  INFO 50682 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-08T01:17:13.685-03:00  INFO 50682 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-06-08T01:17:13.753-03:00  INFO 50682 --- [chatbot-vendas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-08T01:17:13.753-03:00  INFO 50682 --- [chatbot-vendas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2320 ms
-2025-06-08T01:17:14.079-03:00  INFO 50682 --- [chatbot-vendas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-08T01:17:14.127-03:00  INFO 50682 --- [chatbot-vendas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-06-08T01:17:14.154-03:00  INFO 50682 --- [chatbot-vendas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-08T01:17:14.361-03:00  INFO 50682 --- [chatbot-vendas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-08T01:17:14.389-03:00  INFO 50682 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-08T01:17:14.599-03:00  INFO 50682 --- [chatbot-vendas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4942e6af
-2025-06-08T01:17:14.600-03:00  INFO 50682 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-08T01:17:14.641-03:00  WARN 50682 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-06-08T01:17:14.643-03:00  WARN 50682 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-06-08T01:17:15.671-03:00  INFO 50682 --- [chatbot-vendas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-08T01:17:15.737-03:00  INFO 50682 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T01:17:16.350-03:00 DEBUG 50682 --- [chatbot-vendas] [main] c.s.chatbot.security.SecurityFilter      : Filter 'securityFilter' configured for use
-2025-06-08T01:17:17.220-03:00  WARN 50682 --- [chatbot-vendas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-08T01:17:17.656-03:00  INFO 50682 --- [chatbot-vendas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-06-08T01:17:17.729-03:00  INFO 50682 --- [chatbot-vendas] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@e182453, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d7bfb13, org.springframework.security.web.context.SecurityContextHolderFilter@40b2aae9, org.springframework.security.web.header.HeaderWriterFilter@39a8905b, org.springframework.web.filter.CorsFilter@4867f5cf, org.springframework.security.web.authentication.logout.LogoutFilter@2e78213c, com.sistema.chatbot.security.SecurityFilter@5b256ab5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65c75870, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43ee585f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ae736a8, org.springframework.security.web.session.SessionManagementFilter@22112da1, org.springframework.security.web.access.ExceptionTranslationFilter@30b5225b, org.springframework.security.web.access.intercept.AuthorizationFilter@17f8c75e]
-2025-06-08T01:17:18.480-03:00  INFO 50682 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-06-08T01:17:18.501-03:00  INFO 50682 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Started ChatbotVendasApplication in 7.855 seconds (process running for 9.001)
-2025-06-08T01:17:19.265-03:00  INFO 50682 --- [chatbot-vendas] [RMI TCP Connection(1)-192.168.0.25] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-08T01:17:19.265-03:00  INFO 50682 --- [chatbot-vendas] [RMI TCP Connection(1)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-08T01:17:19.269-03:00  INFO 50682 --- [chatbot-vendas] [RMI TCP Connection(1)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2025-06-08T01:29:47.848-03:00  INFO 6714 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Starting ChatbotVendasApplication using Java 23.0.2 with PID 6714 (/home/suporte/Documentos/ChatBot-SaaS-/target/classes started by suporte in /home/suporte/Documentos/ChatBot-SaaS-)
-2025-06-08T01:29:47.853-03:00 DEBUG 6714 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Running with Spring Boot v3.2.3, Spring v6.1.4
-2025-06-08T01:29:47.855-03:00  INFO 6714 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-06-08T01:29:49.549-03:00  INFO 6714 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-08T01:29:49.689-03:00  INFO 6714 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131 ms. Found 5 JPA repository interfaces.
-2025-06-08T01:29:50.635-03:00  INFO 6714 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-08T01:29:50.647-03:00  INFO 6714 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-08T01:29:50.647-03:00  INFO 6714 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-06-08T01:29:50.708-03:00  INFO 6714 --- [chatbot-vendas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-08T01:29:50.708-03:00  INFO 6714 --- [chatbot-vendas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2274 ms
-2025-06-08T01:29:51.106-03:00  INFO 6714 --- [chatbot-vendas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-08T01:29:51.172-03:00  INFO 6714 --- [chatbot-vendas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-06-08T01:29:51.207-03:00  INFO 6714 --- [chatbot-vendas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-08T01:29:51.570-03:00  INFO 6714 --- [chatbot-vendas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-08T01:29:51.596-03:00  INFO 6714 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-08T01:29:51.872-03:00  INFO 6714 --- [chatbot-vendas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43549c6c
-2025-06-08T01:29:51.876-03:00  INFO 6714 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-08T01:29:52.036-03:00  WARN 6714 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-06-08T01:29:52.040-03:00  WARN 6714 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-06-08T01:29:53.354-03:00  INFO 6714 --- [chatbot-vendas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-08T01:29:53.491-03:00  INFO 6714 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T01:29:54.038-03:00 DEBUG 6714 --- [chatbot-vendas] [main] c.s.chatbot.security.SecurityFilter      : Filter 'securityFilter' configured for use
-2025-06-08T01:29:55.053-03:00  WARN 6714 --- [chatbot-vendas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-08T01:29:55.506-03:00  INFO 6714 --- [chatbot-vendas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-06-08T01:29:55.576-03:00  INFO 6714 --- [chatbot-vendas] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6c633590, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c5dc3db, org.springframework.security.web.context.SecurityContextHolderFilter@40a1916d, org.springframework.security.web.header.HeaderWriterFilter@17f8c75e, org.springframework.web.filter.CorsFilter@53cdfb09, org.springframework.security.web.authentication.logout.LogoutFilter@5a32ab89, com.sistema.chatbot.security.SecurityFilter@6e21b6f8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3095e9c6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35c55050, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2910c3ae, org.springframework.security.web.session.SessionManagementFilter@6859f102, org.springframework.security.web.access.ExceptionTranslationFilter@134b9d9c, org.springframework.security.web.access.intercept.AuthorizationFilter@1cfa5e46]
-2025-06-08T01:29:56.400-03:00  INFO 6714 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-06-08T01:29:56.418-03:00  INFO 6714 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Started ChatbotVendasApplication in 9.339 seconds (process running for 10.996)
-2025-06-08T01:29:57.394-03:00  INFO 6714 --- [chatbot-vendas] [RMI TCP Connection(4)-192.168.0.25] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-08T01:29:57.395-03:00  INFO 6714 --- [chatbot-vendas] [RMI TCP Connection(4)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-08T01:29:57.401-03:00  INFO 6714 --- [chatbot-vendas] [RMI TCP Connection(4)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2025-06-08T01:31:55.974-03:00  INFO 6714 --- [chatbot-vendas] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T01:31:55.979-03:00  INFO 6714 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-06-08T01:31:55.989-03:00  INFO 6714 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-06-08T02:05:46.808-03:00  INFO 16479 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Starting ChatbotVendasApplication using Java 23.0.2 with PID 16479 (/home/suporte/Documentos/ChatBot-SaaS-/target/classes started by suporte in /home/suporte/Documentos/ChatBot-SaaS-)
-2025-06-08T02:05:46.817-03:00 DEBUG 16479 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Running with Spring Boot v3.2.3, Spring v6.1.4
-2025-06-08T02:05:46.819-03:00  INFO 16479 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-06-08T02:05:48.895-03:00  INFO 16479 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-08T02:05:49.038-03:00  INFO 16479 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 5 JPA repository interfaces.
-2025-06-08T02:05:50.154-03:00  INFO 16479 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-08T02:05:50.188-03:00  INFO 16479 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-08T02:05:50.190-03:00  INFO 16479 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-06-08T02:05:50.341-03:00  INFO 16479 --- [chatbot-vendas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-08T02:05:50.342-03:00  INFO 16479 --- [chatbot-vendas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2989 ms
-2025-06-08T02:05:51.114-03:00  INFO 16479 --- [chatbot-vendas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-08T02:05:51.288-03:00  INFO 16479 --- [chatbot-vendas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-06-08T02:05:51.396-03:00  INFO 16479 --- [chatbot-vendas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-08T02:05:51.662-03:00  INFO 16479 --- [chatbot-vendas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-08T02:05:51.693-03:00  INFO 16479 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-08T02:05:51.907-03:00  INFO 16479 --- [chatbot-vendas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c2edbe7
-2025-06-08T02:05:51.909-03:00  INFO 16479 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-08T02:05:51.956-03:00  WARN 16479 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-06-08T02:05:51.964-03:00  WARN 16479 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-06-08T02:05:53.057-03:00  INFO 16479 --- [chatbot-vendas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-08T02:05:53.147-03:00  INFO 16479 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T02:05:53.592-03:00 DEBUG 16479 --- [chatbot-vendas] [main] c.s.chatbot.security.SecurityFilter      : Filter 'securityFilter' configured for use
-2025-06-08T02:05:54.554-03:00  WARN 16479 --- [chatbot-vendas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-08T02:05:55.128-03:00  INFO 16479 --- [chatbot-vendas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-06-08T02:05:55.184-03:00  INFO 16479 --- [chatbot-vendas] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5a2e4e77, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@794c22cd, org.springframework.security.web.context.SecurityContextHolderFilter@2f59ecf, org.springframework.security.web.header.HeaderWriterFilter@4750e942, org.springframework.web.filter.CorsFilter@14144cc9, org.springframework.security.web.authentication.logout.LogoutFilter@7c7335dc, com.sistema.chatbot.security.SecurityFilter@209ab1d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79927a7c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ae1ee85, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fb8ad3d, org.springframework.security.web.session.SessionManagementFilter@79c48ad5, org.springframework.security.web.access.ExceptionTranslationFilter@380f9c1d, org.springframework.security.web.access.intercept.AuthorizationFilter@46f5030f]
-2025-06-08T02:05:55.811-03:00  INFO 16479 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-06-08T02:05:55.828-03:00  INFO 16479 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Started ChatbotVendasApplication in 9.869 seconds (process running for 11.564)
-2025-06-08T02:05:56.462-03:00  INFO 16479 --- [chatbot-vendas] [RMI TCP Connection(2)-192.168.0.25] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-08T02:05:56.462-03:00  INFO 16479 --- [chatbot-vendas] [RMI TCP Connection(2)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-08T02:05:56.466-03:00  INFO 16479 --- [chatbot-vendas] [RMI TCP Connection(2)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2025-06-08T02:11:03.478-03:00  INFO 4118 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Starting ChatbotVendasApplication using Java 23.0.2 with PID 4118 (/home/suporte/Documentos/ChatBot-SaaS-/target/classes started by suporte in /home/suporte/Documentos/ChatBot-SaaS-)
-2025-06-08T02:11:03.482-03:00 DEBUG 4118 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Running with Spring Boot v3.2.3, Spring v6.1.4
-2025-06-08T02:11:03.484-03:00  INFO 4118 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-06-08T02:11:05.208-03:00  INFO 4118 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-08T02:11:05.343-03:00  INFO 4118 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 5 JPA repository interfaces.
-2025-06-08T02:11:06.423-03:00  INFO 4118 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-08T02:11:06.441-03:00  INFO 4118 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-08T02:11:06.441-03:00  INFO 4118 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-06-08T02:11:06.511-03:00  INFO 4118 --- [chatbot-vendas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-08T02:11:06.511-03:00  INFO 4118 --- [chatbot-vendas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2513 ms
-2025-06-08T02:11:06.872-03:00  INFO 4118 --- [chatbot-vendas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-08T02:11:06.919-03:00  INFO 4118 --- [chatbot-vendas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-06-08T02:11:06.947-03:00  INFO 4118 --- [chatbot-vendas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-08T02:11:07.195-03:00  INFO 4118 --- [chatbot-vendas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-08T02:11:07.219-03:00  INFO 4118 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-08T02:11:07.373-03:00  INFO 4118 --- [chatbot-vendas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fe9a396
-2025-06-08T02:11:07.374-03:00  INFO 4118 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-08T02:11:07.426-03:00  WARN 4118 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-06-08T02:11:07.428-03:00  WARN 4118 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-06-08T02:11:08.465-03:00  INFO 4118 --- [chatbot-vendas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-08T02:11:08.539-03:00  INFO 4118 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T02:11:08.930-03:00 DEBUG 4118 --- [chatbot-vendas] [main] c.s.chatbot.security.SecurityFilter      : Filter 'securityFilter' configured for use
-2025-06-08T02:11:09.894-03:00  WARN 4118 --- [chatbot-vendas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-08T02:11:10.328-03:00  INFO 4118 --- [chatbot-vendas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-06-08T02:11:10.386-03:00  INFO 4118 --- [chatbot-vendas] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6d6e8dfc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2258ca14, org.springframework.security.web.context.SecurityContextHolderFilter@75564689, org.springframework.security.web.header.HeaderWriterFilter@40a1916d, org.springframework.web.filter.CorsFilter@80347b2, org.springframework.security.web.authentication.logout.LogoutFilter@3e93ee71, com.sistema.chatbot.security.SecurityFilter@19740583, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46f5030f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34adce96, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e5337d8, org.springframework.security.web.session.SessionManagementFilter@223ed38f, org.springframework.security.web.access.ExceptionTranslationFilter@2cef4321, org.springframework.security.web.access.intercept.AuthorizationFilter@ef09e1]
-2025-06-08T02:11:11.049-03:00  INFO 4118 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-06-08T02:11:11.063-03:00  INFO 4118 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Started ChatbotVendasApplication in 8.822 seconds (process running for 10.437)
-2025-06-08T02:11:11.787-03:00  INFO 4118 --- [chatbot-vendas] [RMI TCP Connection(2)-192.168.0.25] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-08T02:11:11.788-03:00  INFO 4118 --- [chatbot-vendas] [RMI TCP Connection(2)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-08T02:11:11.795-03:00  INFO 4118 --- [chatbot-vendas] [RMI TCP Connection(2)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2025-06-08T02:34:42.394-03:00  INFO 4118 --- [chatbot-vendas] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T02:34:42.446-03:00  INFO 4118 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-06-08T02:34:42.503-03:00  INFO 4118 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-06-08T02:34:51.124-03:00  INFO 11038 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Starting ChatbotVendasApplication using Java 23.0.2 with PID 11038 (/home/suporte/Documentos/ChatBot-SaaS-/target/classes started by suporte in /home/suporte/Documentos/ChatBot-SaaS-)
-2025-06-08T02:34:51.125-03:00 DEBUG 11038 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Running with Spring Boot v3.2.3, Spring v6.1.4
-2025-06-08T02:34:51.127-03:00  INFO 11038 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-06-08T02:34:52.664-03:00  INFO 11038 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-08T02:34:52.786-03:00  INFO 11038 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 5 JPA repository interfaces.
-2025-06-08T02:34:53.643-03:00  INFO 11038 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-08T02:34:53.654-03:00  INFO 11038 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-08T02:34:53.654-03:00  INFO 11038 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-06-08T02:34:53.695-03:00  INFO 11038 --- [chatbot-vendas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-08T02:34:53.695-03:00  INFO 11038 --- [chatbot-vendas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2095 ms
-2025-06-08T02:34:53.979-03:00  INFO 11038 --- [chatbot-vendas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-08T02:34:54.029-03:00  INFO 11038 --- [chatbot-vendas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-06-08T02:34:54.057-03:00  INFO 11038 --- [chatbot-vendas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-08T02:34:54.274-03:00  INFO 11038 --- [chatbot-vendas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-08T02:34:54.297-03:00  INFO 11038 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-08T02:34:54.435-03:00  INFO 11038 --- [chatbot-vendas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73fe7483
-2025-06-08T02:34:54.436-03:00  INFO 11038 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-08T02:34:54.472-03:00  WARN 11038 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-06-08T02:34:54.473-03:00  WARN 11038 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-06-08T02:34:55.321-03:00  INFO 11038 --- [chatbot-vendas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-08T02:34:55.383-03:00  INFO 11038 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T02:34:55.716-03:00 DEBUG 11038 --- [chatbot-vendas] [main] c.s.chatbot.security.SecurityFilter      : Filter 'securityFilter' configured for use
-2025-06-08T02:34:56.433-03:00  WARN 11038 --- [chatbot-vendas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-08T02:34:56.767-03:00  INFO 11038 --- [chatbot-vendas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-06-08T02:34:56.822-03:00  INFO 11038 --- [chatbot-vendas] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@47e6004c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c5ae5c3, org.springframework.security.web.context.SecurityContextHolderFilter@17f8c75e, org.springframework.security.web.header.HeaderWriterFilter@79c48ad5, org.springframework.web.filter.CorsFilter@5e3a577a, org.springframework.security.web.authentication.logout.LogoutFilter@1c04dae9, com.sistema.chatbot.security.SecurityFilter@27879518, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e182453, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b3b763d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36b5dbdf, org.springframework.security.web.session.SessionManagementFilter@74c997b1, org.springframework.security.web.access.ExceptionTranslationFilter@290964bd, org.springframework.security.web.access.intercept.AuthorizationFilter@8dcc25]
-2025-06-08T02:34:57.406-03:00  INFO 11038 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-06-08T02:34:57.419-03:00  INFO 11038 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Started ChatbotVendasApplication in 6.994 seconds (process running for 8.101)
-2025-06-08T02:34:58.007-03:00  INFO 11038 --- [chatbot-vendas] [RMI TCP Connection(1)-192.168.0.25] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-08T02:34:58.007-03:00  INFO 11038 --- [chatbot-vendas] [RMI TCP Connection(1)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-08T02:34:58.011-03:00  INFO 11038 --- [chatbot-vendas] [RMI TCP Connection(1)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-06-08T02:41:38.695-03:00  INFO 11038 --- [chatbot-vendas] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T02:41:38.700-03:00  INFO 11038 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-06-08T02:41:38.718-03:00  INFO 11038 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-06-08T03:02:41.440-03:00  INFO 18199 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Starting ChatbotVendasApplication using Java 23.0.2 with PID 18199 (/home/suporte/Documentos/ChatBot-SaaS-/target/classes started by suporte in /home/suporte/Documentos/ChatBot-SaaS-)
-2025-06-08T03:02:41.441-03:00 DEBUG 18199 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Running with Spring Boot v3.2.3, Spring v6.1.4
-2025-06-08T03:02:41.442-03:00  INFO 18199 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-06-08T03:02:43.218-03:00  INFO 18199 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-08T03:02:43.333-03:00  INFO 18199 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 5 JPA repository interfaces.
-2025-06-08T03:02:44.198-03:00  INFO 18199 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-08T03:02:44.209-03:00  INFO 18199 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-08T03:02:44.209-03:00  INFO 18199 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-06-08T03:02:44.252-03:00  INFO 18199 --- [chatbot-vendas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-08T03:02:44.253-03:00  INFO 18199 --- [chatbot-vendas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2362 ms
-2025-06-08T03:02:44.522-03:00  INFO 18199 --- [chatbot-vendas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-08T03:02:44.569-03:00  INFO 18199 --- [chatbot-vendas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-06-08T03:02:44.605-03:00  INFO 18199 --- [chatbot-vendas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-08T03:02:44.803-03:00  INFO 18199 --- [chatbot-vendas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-08T03:02:44.833-03:00  INFO 18199 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-08T03:02:44.979-03:00  INFO 18199 --- [chatbot-vendas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@29d563bd
-2025-06-08T03:02:44.981-03:00  INFO 18199 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-08T03:02:45.024-03:00  WARN 18199 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-06-08T03:02:45.026-03:00  WARN 18199 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-06-08T03:02:45.814-03:00  INFO 18199 --- [chatbot-vendas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-08T03:02:45.870-03:00  INFO 18199 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T03:02:46.198-03:00 DEBUG 18199 --- [chatbot-vendas] [main] c.s.chatbot.security.SecurityFilter      : Filter 'securityFilter' configured for use
-2025-06-08T03:02:46.819-03:00  WARN 18199 --- [chatbot-vendas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-08T03:02:47.176-03:00  INFO 18199 --- [chatbot-vendas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-06-08T03:02:47.230-03:00  INFO 18199 --- [chatbot-vendas] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@26753687, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@765650e4, org.springframework.security.web.context.SecurityContextHolderFilter@42908ad5, org.springframework.security.web.header.HeaderWriterFilter@1cb58c8a, org.springframework.web.filter.CorsFilter@53d3d604, org.springframework.security.web.authentication.logout.LogoutFilter@7b3b763d, com.sistema.chatbot.security.SecurityFilter@7baf7a9d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35355074, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a2d0632, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@307cf289, org.springframework.security.web.session.SessionManagementFilter@6e56f5d4, org.springframework.security.web.access.ExceptionTranslationFilter@2132629e, org.springframework.security.web.access.intercept.AuthorizationFilter@2a0154f7]
-2025-06-08T03:02:47.837-03:00  INFO 18199 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-06-08T03:02:47.851-03:00  INFO 18199 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Started ChatbotVendasApplication in 6.943 seconds (process running for 8.028)
-2025-06-08T03:02:48.356-03:00  INFO 18199 --- [chatbot-vendas] [RMI TCP Connection(4)-192.168.0.25] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-08T03:02:48.356-03:00  INFO 18199 --- [chatbot-vendas] [RMI TCP Connection(4)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-08T03:02:48.360-03:00  INFO 18199 --- [chatbot-vendas] [RMI TCP Connection(4)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2025-06-08T03:06:28.674-03:00  INFO 18199 --- [chatbot-vendas] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T03:06:28.680-03:00  INFO 18199 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-06-08T03:06:28.688-03:00  INFO 18199 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-06-08T03:06:33.832-03:00  INFO 19370 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Starting ChatbotVendasApplication using Java 23.0.2 with PID 19370 (/home/suporte/Documentos/ChatBot-SaaS-/target/classes started by suporte in /home/suporte/Documentos/ChatBot-SaaS-)
-2025-06-08T03:06:33.834-03:00 DEBUG 19370 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Running with Spring Boot v3.2.3, Spring v6.1.4
-2025-06-08T03:06:33.835-03:00  INFO 19370 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-06-08T03:06:34.945-03:00  INFO 19370 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-08T03:06:35.041-03:00  INFO 19370 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 5 JPA repository interfaces.
-2025-06-08T03:06:35.768-03:00  INFO 19370 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-08T03:06:35.778-03:00  INFO 19370 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-08T03:06:35.778-03:00  INFO 19370 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-06-08T03:06:35.818-03:00  INFO 19370 --- [chatbot-vendas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-08T03:06:35.818-03:00  INFO 19370 --- [chatbot-vendas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1682 ms
-2025-06-08T03:06:36.078-03:00  INFO 19370 --- [chatbot-vendas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-08T03:06:36.117-03:00  INFO 19370 --- [chatbot-vendas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-06-08T03:06:36.150-03:00  INFO 19370 --- [chatbot-vendas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-08T03:06:36.319-03:00  INFO 19370 --- [chatbot-vendas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-08T03:06:36.339-03:00  INFO 19370 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-08T03:06:36.457-03:00  INFO 19370 --- [chatbot-vendas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f53a31f
-2025-06-08T03:06:36.459-03:00  INFO 19370 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-08T03:06:36.493-03:00  WARN 19370 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-06-08T03:06:36.494-03:00  WARN 19370 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-06-08T03:06:37.224-03:00  INFO 19370 --- [chatbot-vendas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-08T03:06:37.282-03:00  INFO 19370 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T03:06:37.591-03:00 DEBUG 19370 --- [chatbot-vendas] [main] c.s.chatbot.security.SecurityFilter      : Filter 'securityFilter' configured for use
-2025-06-08T03:06:38.168-03:00  WARN 19370 --- [chatbot-vendas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-08T03:06:38.545-03:00  INFO 19370 --- [chatbot-vendas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-06-08T03:06:38.602-03:00  INFO 19370 --- [chatbot-vendas] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2df019b8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@223ed38f, org.springframework.security.web.context.SecurityContextHolderFilter@7335aae5, org.springframework.security.web.header.HeaderWriterFilter@6803b02d, org.springframework.web.filter.CorsFilter@14144cc9, org.springframework.security.web.authentication.logout.LogoutFilter@50e0541, com.sistema.chatbot.security.SecurityFilter@209ab1d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a2d0632, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c66be14, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66ab765c, org.springframework.security.web.session.SessionManagementFilter@5bebdfcb, org.springframework.security.web.access.ExceptionTranslationFilter@65c75870, org.springframework.security.web.access.intercept.AuthorizationFilter@6f36c42]
-2025-06-08T03:06:39.183-03:00  INFO 19370 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-06-08T03:06:39.197-03:00  INFO 19370 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Started ChatbotVendasApplication in 5.96 seconds (process running for 6.786)
-2025-06-08T03:06:39.852-03:00  INFO 19370 --- [chatbot-vendas] [RMI TCP Connection(1)-192.168.0.25] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-08T03:06:39.853-03:00  INFO 19370 --- [chatbot-vendas] [RMI TCP Connection(1)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-08T03:06:39.860-03:00  INFO 19370 --- [chatbot-vendas] [RMI TCP Connection(1)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2025-06-08T03:09:02.068-03:00  INFO 19370 --- [chatbot-vendas] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T03:09:02.073-03:00  INFO 19370 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-06-08T03:09:02.083-03:00  INFO 19370 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-06-08T03:09:06.988-03:00  INFO 20253 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Starting ChatbotVendasApplication using Java 23.0.2 with PID 20253 (/home/suporte/Documentos/ChatBot-SaaS-/target/classes started by suporte in /home/suporte/Documentos/ChatBot-SaaS-)
-2025-06-08T03:09:06.991-03:00 DEBUG 20253 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Running with Spring Boot v3.2.3, Spring v6.1.4
-2025-06-08T03:09:06.992-03:00  INFO 20253 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-06-08T03:09:08.081-03:00  INFO 20253 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-08T03:09:08.180-03:00  INFO 20253 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 5 JPA repository interfaces.
-2025-06-08T03:09:08.959-03:00  INFO 20253 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-08T03:09:08.969-03:00  INFO 20253 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-08T03:09:08.969-03:00  INFO 20253 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-06-08T03:09:09.009-03:00  INFO 20253 --- [chatbot-vendas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-08T03:09:09.010-03:00  INFO 20253 --- [chatbot-vendas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1740 ms
-2025-06-08T03:09:09.264-03:00  INFO 20253 --- [chatbot-vendas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-08T03:09:09.301-03:00  INFO 20253 --- [chatbot-vendas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-06-08T03:09:09.323-03:00  INFO 20253 --- [chatbot-vendas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-08T03:09:09.507-03:00  INFO 20253 --- [chatbot-vendas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-08T03:09:09.527-03:00  INFO 20253 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-08T03:09:09.648-03:00  INFO 20253 --- [chatbot-vendas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2648aa1b
-2025-06-08T03:09:09.650-03:00  INFO 20253 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-08T03:09:09.681-03:00  WARN 20253 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-06-08T03:09:09.682-03:00  WARN 20253 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-06-08T03:09:10.416-03:00  INFO 20253 --- [chatbot-vendas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-08T03:09:10.471-03:00  INFO 20253 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T03:09:10.776-03:00 DEBUG 20253 --- [chatbot-vendas] [main] c.s.chatbot.security.SecurityFilter      : Filter 'securityFilter' configured for use
-2025-06-08T03:09:11.340-03:00  WARN 20253 --- [chatbot-vendas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-08T03:09:11.660-03:00  INFO 20253 --- [chatbot-vendas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-06-08T03:09:11.712-03:00  INFO 20253 --- [chatbot-vendas] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6859f102, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@424769f2, org.springframework.security.web.context.SecurityContextHolderFilter@5862a07b, org.springframework.security.web.header.HeaderWriterFilter@2564410b, org.springframework.web.filter.CorsFilter@58052571, org.springframework.security.web.authentication.logout.LogoutFilter@61d87509, com.sistema.chatbot.security.SecurityFilter@24710e61, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c5cd332, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2fa81b23, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1467dcd0, org.springframework.security.web.session.SessionManagementFilter@43ee585f, org.springframework.security.web.access.ExceptionTranslationFilter@3444ac8f, org.springframework.security.web.access.intercept.AuthorizationFilter@6654e105]
-2025-06-08T03:09:12.276-03:00  INFO 20253 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-06-08T03:09:12.289-03:00  INFO 20253 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Started ChatbotVendasApplication in 5.777 seconds (process running for 6.527)
-2025-06-08T03:09:12.662-03:00  INFO 20253 --- [chatbot-vendas] [RMI TCP Connection(2)-192.168.0.25] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-08T03:09:12.662-03:00  INFO 20253 --- [chatbot-vendas] [RMI TCP Connection(2)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-08T03:09:12.665-03:00  INFO 20253 --- [chatbot-vendas] [RMI TCP Connection(2)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-06-08T03:15:13.956-03:00  INFO 20253 --- [chatbot-vendas] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T03:15:13.959-03:00  INFO 20253 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-06-08T03:15:13.964-03:00  INFO 20253 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-06-08T03:15:17.271-03:00  INFO 21999 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Starting ChatbotVendasApplication using Java 23.0.2 with PID 21999 (/home/suporte/Documentos/ChatBot-SaaS-/target/classes started by suporte in /home/suporte/Documentos/ChatBot-SaaS-)
-2025-06-08T03:15:17.275-03:00 DEBUG 21999 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Running with Spring Boot v3.2.3, Spring v6.1.4
-2025-06-08T03:15:17.276-03:00  INFO 21999 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-06-08T03:15:18.383-03:00  INFO 21999 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-08T03:15:18.509-03:00  INFO 21999 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 5 JPA repository interfaces.
-2025-06-08T03:15:19.263-03:00  INFO 21999 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-08T03:15:19.273-03:00  INFO 21999 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-08T03:15:19.273-03:00  INFO 21999 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-06-08T03:15:19.313-03:00  INFO 21999 --- [chatbot-vendas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-08T03:15:19.314-03:00  INFO 21999 --- [chatbot-vendas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1740 ms
-2025-06-08T03:15:19.576-03:00  INFO 21999 --- [chatbot-vendas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-08T03:15:19.611-03:00  INFO 21999 --- [chatbot-vendas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-06-08T03:15:19.633-03:00  INFO 21999 --- [chatbot-vendas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-08T03:15:19.801-03:00  INFO 21999 --- [chatbot-vendas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-08T03:15:19.821-03:00  INFO 21999 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-08T03:15:19.939-03:00  INFO 21999 --- [chatbot-vendas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f55a864
-2025-06-08T03:15:19.941-03:00  INFO 21999 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-08T03:15:19.978-03:00  WARN 21999 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-06-08T03:15:19.979-03:00  WARN 21999 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-06-08T03:15:20.741-03:00  INFO 21999 --- [chatbot-vendas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-08T03:15:20.795-03:00  INFO 21999 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T03:15:21.102-03:00 DEBUG 21999 --- [chatbot-vendas] [main] c.s.chatbot.security.SecurityFilter      : Filter 'securityFilter' configured for use
-2025-06-08T03:15:21.674-03:00  WARN 21999 --- [chatbot-vendas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-08T03:15:21.997-03:00  INFO 21999 --- [chatbot-vendas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-06-08T03:15:22.050-03:00  INFO 21999 --- [chatbot-vendas] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@8dcc25, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2693b289, org.springframework.security.web.context.SecurityContextHolderFilter@593f6c3, org.springframework.security.web.header.HeaderWriterFilter@75044df3, org.springframework.web.filter.CorsFilter@259647f2, org.springframework.security.web.authentication.logout.LogoutFilter@2df019b8, com.sistema.chatbot.security.SecurityFilter@7937f96e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17f8c75e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f0bcadb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66c58c03, org.springframework.security.web.session.SessionManagementFilter@4ae1ee85, org.springframework.security.web.access.ExceptionTranslationFilter@27777afd, org.springframework.security.web.access.intercept.AuthorizationFilter@2aee0173]
-2025-06-08T03:15:22.602-03:00  INFO 21999 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-06-08T03:15:22.615-03:00  INFO 21999 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Started ChatbotVendasApplication in 5.877 seconds (process running for 6.917)
-2025-06-08T03:15:23.143-03:00  INFO 21999 --- [chatbot-vendas] [RMI TCP Connection(3)-192.168.0.25] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-08T03:15:23.143-03:00  INFO 21999 --- [chatbot-vendas] [RMI TCP Connection(3)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-08T03:15:23.146-03:00  INFO 21999 --- [chatbot-vendas] [RMI TCP Connection(3)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-06-08T03:16:21.224-03:00  INFO 21999 --- [chatbot-vendas] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T03:16:21.228-03:00  INFO 21999 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-06-08T03:16:21.235-03:00  INFO 21999 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-06-08T11:17:45.957-03:00  INFO 6476 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Starting ChatbotVendasApplication using Java 23.0.2 with PID 6476 (/home/suporte/Documentos/ChatBot-SaaS-/target/classes started by suporte in /home/suporte/Documentos/ChatBot-SaaS-)
-2025-06-08T11:17:45.960-03:00 DEBUG 6476 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Running with Spring Boot v3.2.3, Spring v6.1.4
-2025-06-08T11:17:45.962-03:00  INFO 6476 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-06-08T11:17:47.401-03:00  INFO 6476 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-08T11:17:47.529-03:00  INFO 6476 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 5 JPA repository interfaces.
-2025-06-08T11:17:48.338-03:00  INFO 6476 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-08T11:17:48.349-03:00  INFO 6476 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-08T11:17:48.349-03:00  INFO 6476 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-06-08T11:17:48.388-03:00  INFO 6476 --- [chatbot-vendas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-08T11:17:48.389-03:00  INFO 6476 --- [chatbot-vendas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2018 ms
-2025-06-08T11:17:48.690-03:00  INFO 6476 --- [chatbot-vendas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-08T11:17:48.780-03:00  INFO 6476 --- [chatbot-vendas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-06-08T11:17:48.867-03:00  INFO 6476 --- [chatbot-vendas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-08T11:17:49.377-03:00  INFO 6476 --- [chatbot-vendas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-08T11:17:49.432-03:00  INFO 6476 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-08T11:17:49.731-03:00  INFO 6476 --- [chatbot-vendas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13e0f380
-2025-06-08T11:17:49.732-03:00  INFO 6476 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-08T11:17:49.820-03:00  WARN 6476 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-06-08T11:17:49.822-03:00  WARN 6476 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-06-08T11:17:50.895-03:00  INFO 6476 --- [chatbot-vendas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-08T11:17:51.005-03:00  INFO 6476 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T11:17:51.426-03:00 DEBUG 6476 --- [chatbot-vendas] [main] c.s.chatbot.security.SecurityFilter      : Filter 'securityFilter' configured for use
-2025-06-08T11:17:52.314-03:00  WARN 6476 --- [chatbot-vendas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-08T11:17:52.671-03:00  INFO 6476 --- [chatbot-vendas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-06-08T11:17:52.743-03:00  INFO 6476 --- [chatbot-vendas] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7b0a864e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a271c2b, org.springframework.security.web.context.SecurityContextHolderFilter@7ae736a8, org.springframework.security.web.header.HeaderWriterFilter@7798de95, org.springframework.web.filter.CorsFilter@108b2321, org.springframework.security.web.authentication.logout.LogoutFilter@46f5030f, com.sistema.chatbot.security.SecurityFilter@58052571, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50e0541, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59be715a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@106c4a72, org.springframework.security.web.session.SessionManagementFilter@474f69d, org.springframework.security.web.access.ExceptionTranslationFilter@2e78213c, org.springframework.security.web.access.intercept.AuthorizationFilter@36b5dbdf]
-2025-06-08T11:17:53.367-03:00  INFO 6476 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-06-08T11:17:53.381-03:00  INFO 6476 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Started ChatbotVendasApplication in 8.848 seconds (process running for 10.126)
-2025-06-08T11:17:53.952-03:00  INFO 6476 --- [chatbot-vendas] [RMI TCP Connection(2)-192.168.0.25] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-08T11:17:53.953-03:00  INFO 6476 --- [chatbot-vendas] [RMI TCP Connection(2)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-08T11:17:53.957-03:00  INFO 6476 --- [chatbot-vendas] [RMI TCP Connection(2)-192.168.0.25] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2025-06-08T11:39:35.291-03:00 ERROR 6476 --- [chatbot-vendas] [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+2025-06-10T13:02:54.691-03:00 ERROR 7485 --- [chatbot-vendas] [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
 
 java.lang.RuntimeException: Token inválido ou expirado
 	at com.sistema.chatbot.security.TokenService.validateAccessToken(TokenService.java:60) ~[classes/:na]
-	at com.sistema.chatbot.security.SecurityFilter.doFilterInternal(SecurityFilter.java:31) ~[classes/:na]
+	at com.sistema.chatbot.security.SecurityFilter.doFilterInternal(SecurityFilter.java:50) ~[classes/:na]
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.2.jar:6.2.2]
 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.2.jar:6.2.2]
@@ -676,11 +198,11 @@ java.lang.RuntimeException: Token inválido ou expirado
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
 	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
 
-2025-06-08T11:39:35.292-03:00 ERROR 6476 --- [chatbot-vendas] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+2025-06-10T13:02:54.752-03:00 ERROR 7485 --- [chatbot-vendas] [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
 
 java.lang.RuntimeException: Token inválido ou expirado
 	at com.sistema.chatbot.security.TokenService.validateAccessToken(TokenService.java:60) ~[classes/:na]
-	at com.sistema.chatbot.security.SecurityFilter.doFilterInternal(SecurityFilter.java:31) ~[classes/:na]
+	at com.sistema.chatbot.security.SecurityFilter.doFilterInternal(SecurityFilter.java:50) ~[classes/:na]
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.2.jar:6.2.2]
 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.2.jar:6.2.2]
@@ -761,11 +283,11 @@ java.lang.RuntimeException: Token inválido ou expirado
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
 	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
 
-2025-06-08T11:39:35.366-03:00 ERROR 6476 --- [chatbot-vendas] [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+2025-06-10T13:02:54.754-03:00 ERROR 7485 --- [chatbot-vendas] [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
 
 java.lang.RuntimeException: Token inválido ou expirado
 	at com.sistema.chatbot.security.TokenService.validateAccessToken(TokenService.java:60) ~[classes/:na]
-	at com.sistema.chatbot.security.SecurityFilter.doFilterInternal(SecurityFilter.java:31) ~[classes/:na]
+	at com.sistema.chatbot.security.SecurityFilter.doFilterInternal(SecurityFilter.java:50) ~[classes/:na]
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.2.jar:6.2.2]
 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.2.jar:6.2.2]
@@ -846,91 +368,125 @@ java.lang.RuntimeException: Token inválido ou expirado
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
 	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
 
-2025-06-08T11:39:35.366-03:00 ERROR 6476 --- [chatbot-vendas] [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
-
-java.lang.RuntimeException: Token inválido ou expirado
-	at com.sistema.chatbot.security.TokenService.validateAccessToken(TokenService.java:60) ~[classes/:na]
-	at com.sistema.chatbot.security.SecurityFilter.doFilterInternal(SecurityFilter.java:31) ~[classes/:na]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.2.jar:6.2.2]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.2.jar:6.2.2]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
-
-2025-06-08T12:12:01.185-03:00  INFO 6476 --- [chatbot-vendas] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-06-08T12:12:01.191-03:00  INFO 6476 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-06-08T12:12:01.196-03:00  INFO 6476 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-10T13:04:34.726-03:00  INFO 7485 --- [chatbot-vendas] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T13:04:34.730-03:00  INFO 7485 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-10T13:04:34.734-03:00  INFO 7485 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-10T13:37:31.322-03:00  INFO 16131 --- [chatbot-vendas] [main] c.s.c.ChatbotVendasApplicationTests      : Starting ChatbotVendasApplicationTests using Java 21.0.7 with PID 16131 (started by suporte in /home/suporte/Documentos/ChatBot-SaaS-)
+2025-06-10T13:37:31.323-03:00 DEBUG 16131 --- [chatbot-vendas] [main] c.s.c.ChatbotVendasApplicationTests      : Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-10T13:37:31.324-03:00  INFO 16131 --- [chatbot-vendas] [main] c.s.c.ChatbotVendasApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-06-10T13:37:33.094-03:00  INFO 16131 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-10T13:37:33.263-03:00  INFO 16131 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159 ms. Found 5 JPA repository interfaces.
+2025-06-10T13:37:34.423-03:00  INFO 16131 --- [chatbot-vendas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-10T13:37:34.519-03:00  INFO 16131 --- [chatbot-vendas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-10T13:37:34.588-03:00  INFO 16131 --- [chatbot-vendas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-10T13:37:34.890-03:00  INFO 16131 --- [chatbot-vendas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-10T13:37:34.924-03:00  INFO 16131 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-10T13:37:35.127-03:00  INFO 16131 --- [chatbot-vendas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73d7d676
+2025-06-10T13:37:35.129-03:00  INFO 16131 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-10T13:37:35.192-03:00  WARN 16131 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-10T13:37:35.194-03:00  WARN 16131 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-10T13:37:36.036-03:00  INFO 16131 --- [chatbot-vendas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-10T13:37:36.138-03:00  INFO 16131 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T13:37:37.854-03:00  WARN 16131 --- [chatbot-vendas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-10T13:37:38.418-03:00  INFO 16131 --- [chatbot-vendas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-06-10T13:37:38.514-03:00  INFO 16131 --- [chatbot-vendas] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@40f40221, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16441c13, org.springframework.security.web.context.SecurityContextHolderFilter@6ba3eee9, org.springframework.security.web.header.HeaderWriterFilter@71bb6009, org.springframework.web.filter.CorsFilter@4268c16, org.springframework.security.web.authentication.logout.LogoutFilter@65c040c9, com.sistema.chatbot.security.SecurityFilter@6178ac9d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3fe8d57a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ef6977b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d3b59e2, org.springframework.security.web.session.SessionManagementFilter@7aac05e2, org.springframework.security.web.access.ExceptionTranslationFilter@54500139, org.springframework.security.web.access.intercept.AuthorizationFilter@d7645b2]
+2025-06-10T13:37:39.686-03:00  INFO 16131 --- [chatbot-vendas] [main] c.s.c.ChatbotVendasApplicationTests      : Started ChatbotVendasApplicationTests in 8.786 seconds (process running for 9.872)
+2025-06-10T13:37:40.828-03:00  INFO 16131 --- [chatbot-vendas] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T13:37:40.832-03:00  INFO 16131 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-10T13:37:40.840-03:00  INFO 16131 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-10T14:41:28.612-03:00  INFO 21643 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Starting ChatbotVendasApplication using Java 23.0.2 with PID 21643 (/home/suporte/Documentos/ChatBot-SaaS-/target/classes started by suporte in /home/suporte/Documentos/ChatBot-SaaS-)
+2025-06-10T14:41:28.615-03:00 DEBUG 21643 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-10T14:41:28.616-03:00  INFO 21643 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-06-10T14:41:29.924-03:00  INFO 21643 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-10T14:41:30.045-03:00  INFO 21643 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113 ms. Found 5 JPA repository interfaces.
+2025-06-10T14:41:30.851-03:00  INFO 21643 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-10T14:41:30.862-03:00  INFO 21643 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-10T14:41:30.862-03:00  INFO 21643 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-10T14:41:30.902-03:00  INFO 21643 --- [chatbot-vendas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-10T14:41:30.902-03:00  INFO 21643 --- [chatbot-vendas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1948 ms
+2025-06-10T14:41:31.180-03:00  INFO 21643 --- [chatbot-vendas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-10T14:41:31.228-03:00  INFO 21643 --- [chatbot-vendas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-10T14:41:31.255-03:00  INFO 21643 --- [chatbot-vendas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-10T14:41:31.456-03:00  INFO 21643 --- [chatbot-vendas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-10T14:41:31.478-03:00  INFO 21643 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-10T14:41:31.670-03:00  INFO 21643 --- [chatbot-vendas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@29d563bd
+2025-06-10T14:41:31.672-03:00  INFO 21643 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-10T14:41:31.720-03:00  WARN 21643 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-10T14:41:31.722-03:00  WARN 21643 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-10T14:41:32.508-03:00  INFO 21643 --- [chatbot-vendas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-10T14:41:32.608-03:00  INFO 21643 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T14:41:33.026-03:00 DEBUG 21643 --- [chatbot-vendas] [main] c.s.chatbot.security.SecurityFilter      : Filter 'securityFilter' configured for use
+2025-06-10T14:41:33.661-03:00  WARN 21643 --- [chatbot-vendas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-10T14:41:33.989-03:00  INFO 21643 --- [chatbot-vendas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-06-10T14:41:34.045-03:00  INFO 21643 --- [chatbot-vendas] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@63f9c2cd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b0a864e, org.springframework.security.web.context.SecurityContextHolderFilter@2d7bfb13, org.springframework.security.web.header.HeaderWriterFilter@2f59ecf, org.springframework.web.filter.CorsFilter@53d3d604, org.springframework.security.web.authentication.logout.LogoutFilter@1d07fb2, com.sistema.chatbot.security.SecurityFilter@7baf7a9d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@461f295c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6654e105, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a271c2b, org.springframework.security.web.session.SessionManagementFilter@17f8c75e, org.springframework.security.web.access.ExceptionTranslationFilter@2c66be14, org.springframework.security.web.access.intercept.AuthorizationFilter@7c5ae5c3]
+2025-06-10T14:41:34.615-03:00  INFO 21643 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-06-10T14:41:34.629-03:00  INFO 21643 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Started ChatbotVendasApplication in 6.859 seconds (process running for 8.418)
+2025-06-10T14:41:35.218-03:00  INFO 21643 --- [chatbot-vendas] [RMI TCP Connection(4)-192.168.100.158] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-10T14:41:35.219-03:00  INFO 21643 --- [chatbot-vendas] [RMI TCP Connection(4)-192.168.100.158] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-10T14:41:35.225-03:00  INFO 21643 --- [chatbot-vendas] [RMI TCP Connection(4)-192.168.100.158] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-06-10T15:06:32.577-03:00  INFO 21643 --- [chatbot-vendas] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T15:06:32.584-03:00  INFO 21643 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-10T15:06:32.595-03:00  INFO 21643 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-10T15:07:18.086-03:00  INFO 23545 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Starting ChatbotVendasApplication using Java 23.0.2 with PID 23545 (/home/suporte/Documentos/ChatBot-SaaS-/target/classes started by suporte in /home/suporte/Documentos/ChatBot-SaaS-)
+2025-06-10T15:07:18.088-03:00 DEBUG 23545 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-10T15:07:18.089-03:00  INFO 23545 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-06-10T15:07:19.410-03:00  INFO 23545 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-10T15:07:19.558-03:00  INFO 23545 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136 ms. Found 5 JPA repository interfaces.
+2025-06-10T15:07:20.631-03:00  INFO 23545 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-10T15:07:20.651-03:00  INFO 23545 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-10T15:07:20.651-03:00  INFO 23545 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-10T15:07:20.705-03:00  INFO 23545 --- [chatbot-vendas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-10T15:07:20.706-03:00  INFO 23545 --- [chatbot-vendas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2302 ms
+2025-06-10T15:07:20.982-03:00  INFO 23545 --- [chatbot-vendas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-10T15:07:21.042-03:00  INFO 23545 --- [chatbot-vendas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-10T15:07:21.070-03:00  INFO 23545 --- [chatbot-vendas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-10T15:07:21.259-03:00  INFO 23545 --- [chatbot-vendas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-10T15:07:21.281-03:00  INFO 23545 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-10T15:07:21.425-03:00  INFO 23545 --- [chatbot-vendas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5513a46b
+2025-06-10T15:07:21.426-03:00  INFO 23545 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-10T15:07:21.465-03:00  WARN 23545 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-10T15:07:21.466-03:00  WARN 23545 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-10T15:07:22.239-03:00  INFO 23545 --- [chatbot-vendas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-10T15:07:22.298-03:00  INFO 23545 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T15:07:22.614-03:00 DEBUG 23545 --- [chatbot-vendas] [main] c.s.chatbot.security.SecurityFilter      : Filter 'securityFilter' configured for use
+2025-06-10T15:07:23.231-03:00  WARN 23545 --- [chatbot-vendas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-10T15:07:23.573-03:00  INFO 23545 --- [chatbot-vendas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-06-10T15:07:23.633-03:00  INFO 23545 --- [chatbot-vendas] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@65977161, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f7e2ca8, org.springframework.security.web.context.SecurityContextHolderFilter@75044df3, org.springframework.security.web.header.HeaderWriterFilter@5c5cd332, org.springframework.web.filter.CorsFilter@4b38d912, org.springframework.security.web.authentication.logout.LogoutFilter@29c471f6, com.sistema.chatbot.security.SecurityFilter@5afbbf9b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79c48ad5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4fc41cba, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d07fb2, org.springframework.security.web.session.SessionManagementFilter@7335aae5, org.springframework.security.web.access.ExceptionTranslationFilter@54a81a18, org.springframework.security.web.access.intercept.AuthorizationFilter@223ed38f]
+2025-06-10T15:07:24.190-03:00  INFO 23545 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-06-10T15:07:24.203-03:00  INFO 23545 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Started ChatbotVendasApplication in 6.651 seconds (process running for 7.979)
+2025-06-10T15:07:24.761-03:00  INFO 23545 --- [chatbot-vendas] [RMI TCP Connection(1)-192.168.100.158] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-10T15:07:24.762-03:00  INFO 23545 --- [chatbot-vendas] [RMI TCP Connection(1)-192.168.100.158] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-10T15:07:24.765-03:00  INFO 23545 --- [chatbot-vendas] [RMI TCP Connection(1)-192.168.100.158] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-06-10T15:18:10.100-03:00  INFO 4132 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Starting ChatbotVendasApplication using Java 23.0.2 with PID 4132 (/home/suporte/Documentos/ChatBot-SaaS-/target/classes started by suporte in /home/suporte/Documentos/ChatBot-SaaS-)
+2025-06-10T15:18:10.103-03:00 DEBUG 4132 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-10T15:18:10.105-03:00  INFO 4132 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-06-10T15:18:12.483-03:00  INFO 4132 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-10T15:18:12.672-03:00  INFO 4132 --- [chatbot-vendas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 181 ms. Found 5 JPA repository interfaces.
+2025-06-10T15:18:13.865-03:00  INFO 4132 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-10T15:18:13.878-03:00  INFO 4132 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-10T15:18:13.878-03:00  INFO 4132 --- [chatbot-vendas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-10T15:18:13.936-03:00  INFO 4132 --- [chatbot-vendas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-10T15:18:13.937-03:00  INFO 4132 --- [chatbot-vendas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2879 ms
+2025-06-10T15:18:14.369-03:00  INFO 4132 --- [chatbot-vendas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-10T15:18:14.458-03:00  INFO 4132 --- [chatbot-vendas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-10T15:18:14.523-03:00  INFO 4132 --- [chatbot-vendas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-10T15:18:15.419-03:00  INFO 4132 --- [chatbot-vendas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-10T15:18:15.506-03:00  INFO 4132 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-10T15:18:16.279-03:00  INFO 4132 --- [chatbot-vendas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74c23525
+2025-06-10T15:18:16.292-03:00  INFO 4132 --- [chatbot-vendas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-10T15:18:16.465-03:00  WARN 4132 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-10T15:18:16.479-03:00  WARN 4132 --- [chatbot-vendas] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-10T15:18:19.083-03:00  INFO 4132 --- [chatbot-vendas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-10T15:18:19.185-03:00  INFO 4132 --- [chatbot-vendas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T15:18:20.254-03:00 DEBUG 4132 --- [chatbot-vendas] [main] c.s.chatbot.security.SecurityFilter      : Filter 'securityFilter' configured for use
+2025-06-10T15:18:23.301-03:00  WARN 4132 --- [chatbot-vendas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-10T15:18:24.474-03:00  INFO 4132 --- [chatbot-vendas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-06-10T15:18:24.589-03:00  INFO 4132 --- [chatbot-vendas] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5fb8ad3d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5bb0122, org.springframework.security.web.context.SecurityContextHolderFilter@18563d10, org.springframework.security.web.header.HeaderWriterFilter@5bebdfcb, org.springframework.web.filter.CorsFilter@15844237, org.springframework.security.web.authentication.logout.LogoutFilter@8802edd, com.sistema.chatbot.security.SecurityFilter@5e3a577a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61d87509, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@134b9d9c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d4eba14, org.springframework.security.web.session.SessionManagementFilter@20dab85c, org.springframework.security.web.access.ExceptionTranslationFilter@155788a7, org.springframework.security.web.access.intercept.AuthorizationFilter@36821a1b]
+2025-06-10T15:18:26.479-03:00  INFO 4132 --- [chatbot-vendas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-06-10T15:18:26.621-03:00  INFO 4132 --- [chatbot-vendas] [main] c.s.chatbot.ChatbotVendasApplication     : Started ChatbotVendasApplication in 17.57 seconds (process running for 19.083)
+2025-06-10T15:18:27.749-03:00  INFO 4132 --- [chatbot-vendas] [RMI TCP Connection(5)-192.168.100.158] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-10T15:18:27.753-03:00  INFO 4132 --- [chatbot-vendas] [RMI TCP Connection(5)-192.168.100.158] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-10T15:18:27.764-03:00  INFO 4132 --- [chatbot-vendas] [RMI TCP Connection(5)-192.168.100.158] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2025-06-10T15:23:40.627-03:00  INFO 4132 --- [chatbot-vendas] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T15:23:40.635-03:00  INFO 4132 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-10T15:23:40.641-03:00  INFO 4132 --- [chatbot-vendas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

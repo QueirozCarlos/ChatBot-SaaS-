@@ -49,7 +49,7 @@ public class ReportController {
         }
     }
 
-    @GetMapping("/download/sales")
+    @GetMapping("/sales")
     public ResponseEntity<Resource> downloadSalesCsv() {
         try {
             String csvContent = reportService.generateSalesCsv();

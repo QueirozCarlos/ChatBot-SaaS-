@@ -14,6 +14,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
 @Component
 public class SecurityFilter extends OncePerRequestFilter {
@@ -24,8 +26,25 @@ public class SecurityFilter extends OncePerRequestFilter {
     @Autowired
     UserRepository userRepository;
 
+    private final List<String> publicEndpoints = Arrays.asList(
+        "/api/auth/login",
+        "/api/auth/register",
+        "/api/auth/refresh",
+        "/swagger-ui.html",
+        "/swagger-ui/",
+        "/v3/api-docs/"
+    );
+
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+        String requestPath = request.getRequestURI();
+        
+        // Verifica se é um endpoint público
+        if (publicEndpoints.stream().anyMatch(endpoint -> requestPath.startsWith(endpoint))) {
+            filterChain.doFilter(request, response);
+            return;
+        }
+
         var token = this.recoverToken(request);
         if (token != null) {
             var email = tokenService.validateAccessToken(token);
