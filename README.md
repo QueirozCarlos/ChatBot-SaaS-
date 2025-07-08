@@ -1,4 +1,4 @@
-# 🤖 Shopsync - Sistema de Vendas Inteligente
+# 🤖 Shopsync - Sistema de estoque e Vendas
 
 Um sistema completo de estoque e vendas, desenvolvido em Spring Boot com geração de relatórios.
 
